@@ -22,6 +22,8 @@
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
+rm -rf feeds/packages/net/adguardhome
+git clone https://github.com/18271211/adguardhome feeds/packages/net/adguardhome
 
 # drop mosdns and v2ray-geodata packages that come with the source
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
