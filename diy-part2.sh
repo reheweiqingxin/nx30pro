@@ -32,3 +32,5 @@ find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 curl -o package/mosdns/luci-app-mosdns/root/etc/mosdns/config_custom.yaml https://raw.githubusercontent.com/Jio0oiJ/mosdns_config/master/config_custom.yaml
+
+git clone https://github.com/xiaorouji/openwrt-passwall2 package/passwall2
