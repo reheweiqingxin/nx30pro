@@ -29,11 +29,12 @@ find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
 
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 curl -o package/mosdns/luci-app-mosdns/root/etc/mosdns/config_custom.yaml https://raw.githubusercontent.com/Jio0oiJ/mosdns_config/master/config_custom.yaml
 
 rm -rf package/feeds/luci/luci-app-passwall
 rm -rf package/feeds/packages/hysteria
+rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 curl -o feeds/packages/net/softethervpn/Makefile https://raw.githubusercontent.com/Jio0oiJ/softethervpn/master/Makefile
