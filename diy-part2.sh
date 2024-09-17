@@ -22,8 +22,8 @@
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
-rm -rf feeds/packages/net/adguardhome
-git clone https://github.com/Jio0oiJ/adguardhome feeds/packages/net/adguardhome
+#rm -rf feeds/packages/net/adguardhome
+#git clone https://github.com/Jio0oiJ/adguardhome feeds/packages/net/adguardhome
 
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
