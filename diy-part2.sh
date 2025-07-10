@@ -19,4 +19,4 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-curl -o feeds/packages/net/softethervpn/Makefile https://raw.githubusercontent.com/Jio0oiJ/softethervpn/master/Makefile
+#curl -o feeds/packages/net/softethervpn/Makefile https://raw.githubusercontent.com/Jio0oiJ/softethervpn/master/Makefile
